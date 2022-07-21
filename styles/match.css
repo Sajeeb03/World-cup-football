@@ -74,36 +74,20 @@ body {
     background-color: #161616;
     height: 312px;
     min-width: 244px;
+    max-width: 244px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
 }
 
-.player {
-    width: 280px;
-    height: 360px;
-    border: 1px solid #E8E8E8;
-    border-radius: 10px;
-}
-
-.player .fig img {
-    width: 100%;
-
-}
-
-.player .auction-text {
-    margin-top: 10px;
-    margin-left: 15px;
+.parent {
+    display: flex;
 }
 
 .options {
     width: 420px;
 }
-
-
 
 .options a {
     text-decoration: none;
@@ -117,32 +101,41 @@ body {
 
 }
 
-#blog {
+.mathes {
+    margin-left: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+}
+
+.match {
+    width: 235px;
+    height: 180px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#schedule {
     background-color: tomato;
 }
 
-/* auctions now */
-.description {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-.icons {
+.match-flag {
     display: flex;
-    align-items: center;
-    gap: 10px;
+    justify-content: space-between;
 }
 
-.parent {
-    display: flex;
+.match-text .teams {
+    font-size: 20px;
+    font-weight: 600px;
 }
 
-.auction {
-    margin-left: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+.match-text .date {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4D4D4D;
 }
 
 /* footer section */
