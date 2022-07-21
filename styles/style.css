@@ -6,20 +6,14 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-}
-
 .container {
     background-color: #161616;
-    width: 1421px;
+    max-width: 1120px;
     height: 646px;
     border-radius: 10px;
-    margin: 140px;
+    margin: 0 auto;
     margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .welcome-text .photo img {
@@ -33,7 +27,6 @@ main {
     margin-left: 82px;
     margin-top: 30px;
     margin-bottom: 53px;
-
     border-radius: 5px;
 
 }
@@ -68,4 +61,105 @@ main {
     font-weight: 400;
     border: 1px solid tomato;
     border-radius: 5px;
+}
+
+/* second section */
+.container-two {
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.options {
+    background-color: #161616;
+    height: 312px;
+    min-width: 244px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.player {
+    width: 280px;
+    height: 360px;
+    border: 1px solid #E8E8E8;
+    border-radius: 10px;
+}
+
+.player .fig img {
+    width: 100%;
+
+}
+
+.player .auction-text {
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.options {
+    width: 420px;
+}
+
+.options a {
+    text-decoration: none;
+    background-color: white;
+    color: #161616;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    margin: 20px;
+
+}
+
+/* auctions now */
+.description {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.parent {
+    display: flex;
+}
+
+.auction {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+/* footer section */
+.last-sec {
+    background-color: #161616;
+}
+
+.foot-text {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+}
+
+hr {
+    color: white;
+    width: 1120px;
+}
+
+.foot-con {
+    width: 1120px;
+    margin: 0 auto;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-evenly;
 }
