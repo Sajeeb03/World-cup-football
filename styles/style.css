@@ -9,7 +9,7 @@ body {
 .container {
     background-color: #161616;
     max-width: 1120px;
-    height: 646px;
+    /* height: 646px; */
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 50px;
@@ -37,7 +37,7 @@ body {
 
 .welcome-text {
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
 }
 
 .fat-text {
@@ -78,13 +78,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-
 }
 
 .player {
-    width: 280px;
-    height: 360px;
+    /* width: 280px;
+    height: 360px; */
     border: 1px solid #E8E8E8;
     border-radius: 10px;
 }
@@ -99,9 +97,9 @@ body {
     margin-left: 15px;
 }
 
-.options {
+/* .options {
     width: 420px;
-}
+} */
 
 
 
@@ -168,4 +166,86 @@ hr {
     color: #FFFFFF;
     display: flex;
     justify-content: space-evenly;
+}
+
+.foot-icons {
+    color: #FFFFFF;
+}
+
+.social {
+    display: none;
+}
+
+@media screen and (max-width:668px) {
+    .container {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .welcome-text {
+        flex-direction: column;
+
+    }
+
+    .p-text {
+        margin-right: 80px;
+        text-align: justify;
+    }
+
+    .welcome-text .photo img {
+        width: 90%;
+        margin-top: 80px;
+    }
+
+    .parent {
+        flex-direction: column;
+    }
+
+    .auction {
+        margin: 0;
+        grid-template-columns: repeat(1, 1fr);
+
+        align-items: center;
+    }
+
+    .container-two {
+        margin-bottom: 10px;
+    }
+
+    .last-sec {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .foot-con {
+        flex-direction: column;
+    }
+
+    .para {
+        text-align: center;
+    }
+
+    /* .player .fig img {
+        margin-bottom: 100px;
+
+    } */
+    footer {
+        width: 100%;
+    }
+
+    .foot-con {
+        width: auto;
+        flex-direction: column;
+    }
+
+    hr {
+        width: 10em;
+    }
+
+    .social {
+        width: 30%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+    }
 }
